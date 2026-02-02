@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UISEK - Ecuador (Refactor Accesibilidad)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="https://uisek.edu.ec/" aria-label="Ir a inicio UISEK">
+        <img src="https://uisek.edu.ec/wp-content/uploads/2024/01/logo-sek-2024-azul.png"
+             alt="Logo de la Universidad Internacional SEK (UISEK)">
+      </a>
+    </div>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="https://uisek.edu.ec/" aria-current="page">Inicio</a></li>
+        <li><a href="https://uisek.edu.ec/admisiones/">Admisiones</a></li>
+        <li><a href="https://uisek.edu.ec/la-universidad/">La Universidad</a></li>
+        <li><a href="https://uisek.edu.ec/oferta-academica/">Oferta académica</a></li>
+        <li><a href="https://uisek.edu.ec/estudiantes/">Estudiantes</a></li>
+        <li><a href="https://uisek.edu.ec/investigacion/">Investigación</a></li>
+      </ul>
+    </nav>
+
+    <form class="search" method="get" action="https://uisek.edu.ec/" role="search">
+      <label for="q" class="sr-only">Buscar en UISEK</label>
+      <input id="q" name="s" type="search" placeholder="Buscar" />
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <h1>UISEK - Ecuador</h1>
+
+    <section aria-labelledby="admisiones">
+      <h2 id="admisiones">Admisiones</h2>
+      <p>Matrículas abiertas - Abril 2026. Pregrado y maestrías.</p>
+      <a class="btn" href="https://uisek.edu.ec/admisiones/">Postula</a>
+    </section>
+
+    <section aria-labelledby="oferta">
+      <h2 id="oferta">Oferta Académica</h2>
+      <ul class="cards">
+        <li><a class="card" href="https://uisek.edu.ec/oferta-academica/carreras-de-pregrado/">Carreras de pregrado</a></li>
+        <li><a class="card" href="https://uisek.edu.ec/oferta-academica/postgrado/">Programas de posgrado</a></li>
+        <li><a class="card" href="https://uisek.edu.ec/oferta-academica/uisek-online/">UISEK Online</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="ubicacion">
+      <h2 id="ubicacion">Ubicación de nuestros campus</h2>
+
+      <article class="campus" aria-labelledby="cervantes">
+        <h3 id="cervantes">Campus Miguel de Cervantes</h3>
+        <p>Carcelén, Quito.</p>
+        <a href="https://goo.gl/maps/x6V9wGjqwcyLH1E59" target="_blank" rel="noopener">
+          Cómo llegar al Campus Miguel de Cervantes (Google Maps)
+        </a>
+      </article>
+
+      <article class="campus" aria-labelledby="segovia">
+        <h3 id="segovia">Campus Felipe Segovia</h3>
+        <p>Italia y Mariana de Jesús, Quito.</p>
+        <a href="https://goo.gl/maps/KYrRAnj4sEq2fjaK8" target="_blank" rel="noopener">
+          Cómo llegar al Campus Felipe Segovia (Google Maps)
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Enlaces del pie de página">
+      <ul>
+        <li><a href="https://uisek.edu.ec/politica-de-privacidad/">Política de privacidad</a></li>
+        <li><a href="mailto:admisiones@uisek.edu.ec">Correo: admisiones@uisek.edu.ec</a></li>
+        <li><a href="tel:+5933974800">Teléfono: 3974800 (Carcelén)</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 Universidad Internacional SEK Ecuador</p>
+  </footer>
+</body>
+</html>
